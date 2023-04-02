@@ -30,8 +30,8 @@ main    proc
         INVOKE scanf, ADDR in1fmt, ADDR x
         INVOKE printf, ADDR msg3fmt, ADDR msg2
         INVOKE scanf, ADDR in1fmt, ADDR y
-        INVOKE printf, ADDR msg2fmt, msg3
-        INVOKE printf, ADDR msg3fmt, msg4fmt
+        INVOKE printf, ADDR msg2fmt, ADDR msg3
+        INVOKE printf, ADDR msg3fmt, ADDR msg4
         INVOKE scanf, ADDR in1fmt, ADDR z
         INVOKE printf, ADDR msg4fmt, x, ADDR meq, y, ADDR meq, z
         INVOKE printf, ADDR msg5fmt, z, ADDR maq, y, ADDR maq, x
