@@ -101,3 +101,44 @@
         add ebx, eax
         mov q, ebx
     ```
+
+### 04 - Usando a ordem de operações do C, converta as seguintes declarações aritméticas em um segmento de código de linguagem assembly equivalente. Tome cuidado para implementar cuidadosamente o sinal de menos unário, os operadores de incremento e decremento: 
+- A)
+    ```assembly
+    dec i
+    ```
+- B)
+    ```assembly
+    mov eax, k
+    inc eax
+    sub eax, m
+    mov j, eax
+    ```
+- C)
+    ```assembly
+    mov eax, a
+    add eax, y
+    neg eax
+    mov z, eax
+    ```
+- D)
+    ```assembly
+    mov eax, b
+    inc eax
+    sub eax, c
+    inc c
+    mov a, eax
+    ```
+- E)
+    ```assembly
+    mov eax, y
+    neg eax
+    add eax, z
+    dec z
+    mov x, aex
+    ```
+### 05- arquivo em .asm
+
+### 06- arquivo em .asm
+
+### 07- arquivo em .asm
