@@ -38,7 +38,7 @@
     ```
 
 ### 03- Usando a ordem de operações de C, converta as seguintes declarações aritméticas nas declarações equivalentes em linguagem assembly. Certifique-se de não destruir o conteúdo de nenhuma das variáveis que aparecem apenas à direita do símbolo de atribuição, a menos que ++ ou -- seja usado.
-- A) x = x ∗ y + z ∗ 2;
+- A) 
     ```assembly
     mov eax, x
     imul y
