@@ -11,14 +11,31 @@
 
 ### 02 - Implemente cada uma das seguintes declarações em linguagem assembly:
 
-- a) initial byte ?
-- b) grade byte 'B'
-- c) x byte 'P'
-
+- a) 
+     ```assembly
+     initial byte ?
+     ```
+- b) 
+     ```assembly
+     grade byte 'B'
+     ```
+- c)
+     ```assembly
+     x byte 'P'
      y byte 'Q'
-- d) amount sdword ?
-- e) count sdword 0
-- f) number sdword -396
+     ```
+- d) 
+     ```assembly
+     amount sdword ?
+     ```
+- e) 
+     ```assembly
+     count sdword 0
+     ```
+- f) 
+     ```assembly
+     number sdword -396
+     ```
 
 ### 03 - Assumindo que as variáveis foram declaradas corretamente, indique se as seguintes declarações são sintaticamente corretas ou incorretas. Se incorretas, indique o que está errado na declaração:
 
@@ -33,70 +50,71 @@
 
 ### 04 - Assumindo que todas as variáveis são declaradas como sdword, escreva instruções de linguagem assembly para implementar cada uma das seguintes declarações ou segmentos de código em C:
 
-- a) mov i, 1
-
-- b) mov eax, y
-
+- a) 
+     ```assembly
+     mov i, 1
+     ```
+- b) 
+     ```assembly
+     mov eax, y
      mov x, eax
-
-- c) mov c, 2
-
+     ```
+- c) 
+     ```assembly
+     mov c, 2
      mov eax, c
-
      mov b, eax
-
      mov eax, b
-
      mov a, eax
-
-- d) mov x, 1
-
+     ```
+- d) 
+     ```assembly
+     mov x, 1
      mov y, 1
-
-- e) mov a, 1
-
+     ```
+- e) 
+     ```assembly
+     mov a, 1
      mov b, 2
-
      mov eax, a
-
      mov c, eax
-
      mov eax, b
-
      mov a, eax
-
      mov eax, c
-
-     mov b, 
-
+     mov b, eax
+     ```
+    
 ### 05 - Assumindo que todas as variáveis são declaradas como byte, escreva instruções de linguagem assembly para implementar cada uma das seguintes declarações ou segmentos de código em C:
 
-- a) mov a, 'B'
-
-- b) mov al, c
-
+- a) 
+     ```assembly
+     mov a, 'B'
+     ```
+- b) 
+     ```assembly
+     mov al, c
      mov b, al
-
-- c) mov d, 'E'
-
+     ``` 
+- c) 
+     ```assembly
+     mov d, 'E'
      mov al, d
-
      mov e, al
-
-- d) mov d, 'z'
-
+     ```
+- d) 
+     ```assembly
+     mov d, 'z'
      mov al, d
-
      mov a, al
-
      mov al, a
-
      mov b, al
-
-- e) mov a, '2'
-
+     ```
+    
+- e) 
+     ```assembly
+     mov a, '2'
      mov b, '?'
-
      mov al, b
-
      mov a, al
+     ```
+     
