@@ -137,8 +137,3 @@
     dec z
     mov x, aex
     ```
-### 05- arquivo em .asm
-
-### 06- arquivo em .asm
-
-### 07- arquivo em .asm
