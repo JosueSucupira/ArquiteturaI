@@ -32,8 +32,3 @@
     blank line
 ```
 
-### 05- arquivo em .asm
-
-### 06- arquivo em .asm
-
-###
