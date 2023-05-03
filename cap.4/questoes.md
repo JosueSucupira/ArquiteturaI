@@ -5,26 +5,27 @@
 - B) incorreto, o 'then' não para estar la, poeria usar o 'then' como um marcador, mas a forma apresentada está incorreta.
 - C) incorreto, pois no lugar de usar o valor, é calculado o endereço de memória
 de x menos 1.
-- D) correto, 'then01' é apenas um rótulo que indica o início do bloco de código a ser executado se a condição do if for verdadeira. 
+- D) incorreto, o cmp ta fazendo dois acesso à memória
 
 ### 02-) Usando diretivas MASM, escreva um segmento de código em linguagem assembly para implementar o seguinte:
 
 ```assembly
-.if a > b
+mov eax, b
+.if a > eax
     dec a
 .else
-    .if b >= c
+    .if eax >= c
         sub b, 2
     .else
-        .if c > d
-            mov eax, d
+    	mov eax, d 
+        .if c > eax
             add c, eax
         .else
             mov eax, d
-            mov ebx, 2
             cdq
+            mov ebx, 2
             div ebx
-            mov b, eax
+            mov d, eax
         .endif
     .endif
 .endif
