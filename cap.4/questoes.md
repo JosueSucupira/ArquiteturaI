@@ -37,7 +37,7 @@ mov eax, b
 ```assemly
 if01:       cmp w, 1
             jne endif01
-            comp x, 2
+and01:      comp x, 2
             jne endif01
 then01:     inc y
 endif01:    nop
@@ -48,7 +48,7 @@ endif01:    nop
 
 if02:       cmp num, 0
             jle then02
-            cmp num, 3
+or01:       cmp num, 3
             jle endif02
 then02:     sub count, 2
 endif02:    nop
@@ -58,7 +58,7 @@ endif02:    nop
 ```assembly
 if03:       cmp w, 1
             je and01
-            cmp x, 2
+or01:       cmp x, 2
             jne endif03
 and01:      cmp y, 3
             jne endi03
@@ -70,7 +70,7 @@ endif03:    nop
 ```assembly
 if04:       cmp b, 2
             jne or01
-            cmp c, 3
+and01:      cmp c, 3
             jg then04
 or01:       cmp a, 1
             je then04
@@ -83,14 +83,16 @@ endif04:    nop
 ### 04-) Dado o exemplo da estrutura if-then-else-if no Problema 2 acima, reimplemente-o usando uma estrutura if-then-if aninhada: 
 - A-) 
 ```assembly
-.if a <= b
-    .if b < c
-        .if c <= d
+mov eax, b
+.if a <= eax
+    .if eax < c
+    	mov eax, c
+        .if eax <= d
             mov eax, d
-            mov ebx, 2
             cdq
+            mov ebx, 2
             div ebx
-            mov b, eax
+            mov d, eax
         .else
             mov eax, d
             add c, eax
@@ -113,13 +115,13 @@ if02:       cmp eax, c
             jge else02
 then02:     nop
             mov eax, d
-if03        cmp c, eax
+if03:       cmp c, eax
             jg else03
 then03:     mov eax, d
             mov ebx, 2
             cdq
             div ebx
-            mov b, eax
+            mov d, eax
             jmp endif01
 else03:     mov eax, d
             add c, eax
@@ -146,7 +148,7 @@ switch01:       cmp number, 0
                 jmp endswitch01
 case01:         add count, 2
                 jmp endswitch01
-case23          sub count, 2
+case23:         sub count, 2
 endswitch01:    nop
 ```
 
