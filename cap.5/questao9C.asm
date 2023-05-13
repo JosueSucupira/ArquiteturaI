@@ -15,7 +15,6 @@ msg1        byte "Calcular fatorial de: ",0
 
 num         sdword ?
 fatorial    sdword 1
-i           sdword 1
 
             .code
 main        proc

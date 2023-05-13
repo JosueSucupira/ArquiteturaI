@@ -17,7 +17,6 @@ primeiro    sdword 0
 segundo     sdword 1
 proximo     sdword 0
 fibonacci   sdword 0
-i           sdword 2
 
             .code
 main        proc
