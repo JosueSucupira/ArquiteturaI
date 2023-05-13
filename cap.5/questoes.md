@@ -2,7 +2,7 @@
 
 ### 01-) Dado as seguintes declarações de linguagem de montagem, indique se elas estão sintaticamente corretas ou incorretas. Se estiverem incorretas, indique o que está errado na declaração:
 - A-) Inorreto, pois não exite a diretiva .for e .endfor em MASM
-- B-) Correto
+- B-) Incorreto. Pois o while está fazendo uma comparação com dois valores na memória.
 - C-) Correto
 - D-) Incorreto, a diretiva .untiledx está incorreta
 - E-) Incorreto, as diretives correspondente do while em assembly MASM é .repeat - .until
@@ -19,6 +19,7 @@ while01:    cmp ecx, y
             add ax, x
             mov ans, eax
             inc ecx
+            jmp while01
 endw01:     nop
             mov i, ecx
 endif01:    nop
@@ -36,7 +37,7 @@ endif01:    nop
                 mov ans, 0
 if01:           cmp y,0
                 je endif01
-                mov ecx
+                mov ecx, 1
 repeat01:       nop
                 mov eax, ans
                 add eax, x
