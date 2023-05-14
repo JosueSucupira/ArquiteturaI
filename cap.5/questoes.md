@@ -136,7 +136,7 @@ mov sum, 0
 .repeat
 add sum, ecx
 sub ecx, 2
-.until i <= 0
+.until ecx <= 0
 mov i, ecx
 ```
 
