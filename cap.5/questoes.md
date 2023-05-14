@@ -150,11 +150,12 @@ repeat01:       nop
                 cmp ecx, 0
                 jg repeat01
 endrpt01:       nop
+                mov i, ecx
 ```
 ### 08-) Implemente o último segmento de código na Seção 5.5 usando a instrução de loop em vez das diretivas .repeat e .untilcxz.
 
 ```assembly
-mov ecx,2
+            mov ecx,2
 for01:      nop
             mov tempecx, ecx
             mov ecx, 3
