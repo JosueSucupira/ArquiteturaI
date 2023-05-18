@@ -111,25 +111,26 @@ mov eax, b
 if01:       cmp a, eax
             jg else01
 then01:     nop
-if02:       cmp eax, c
+if02:       cmp eax, c1
             jge else02
 then02:     nop
             mov eax, d
-if03:       cmp c, eax
+if03:       cmp c1, eax
             jg else03
 then03:     mov eax, d
             mov ebx, 2
             cdq
             div ebx
             mov d, eax
-            jmp endif01
+            jmp endif03
 else03:     mov eax, d
-            add c, eax
-            jmp endif01
+            add c1, eax
 endif03:    nop
+            jmp endif02
 else02:     sub b, 2    
-            jmp endif01
+            jmp endif02
 endif02:    nop
+            jmp endif01
 else01:     dec a
 endif01:    nop
 ```
