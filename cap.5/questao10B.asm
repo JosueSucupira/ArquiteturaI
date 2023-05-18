@@ -45,7 +45,8 @@ else02:     nop
                 mov eax, ebx
                 mov ebx, edx
                 inc ecx
-            .until ecx > num  
+            .until ecx > num 
+            mov i, ecx
             mov fibonacci, edx
 endif02:    nop
 endif01:    nop
