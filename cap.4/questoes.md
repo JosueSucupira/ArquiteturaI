@@ -128,7 +128,6 @@ else03:     mov eax, d
 endif03:    nop
             jmp endif02
 else02:     sub b, 2    
-            jmp endif02
 endif02:    nop
             jmp endif01
 else01:     dec a
