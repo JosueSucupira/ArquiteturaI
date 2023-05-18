@@ -1,5 +1,5 @@
 ;ml /Cx /coff .\questao9B.asm /link /SUBSYSTEM:console /out.questao9B.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib            
-            
+Cálculo de um fatorial em Assembly MASM .repeat - .until                     
             .686
             .model flat, c
             .stack 100h

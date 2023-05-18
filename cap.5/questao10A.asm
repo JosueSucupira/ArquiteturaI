@@ -1,5 +1,5 @@
 ;ml /Cx /coff .\questao10A.asm /link /SUBSYSTEM:console /out.questao10A.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib            
-            
+;Elemento x da sequencia de Fibonacci em Assembly MASM .while - .endw                   
             .686
             .model flat, c
             .stack 100h

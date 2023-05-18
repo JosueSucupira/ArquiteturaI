@@ -1,5 +1,5 @@
 ;ml /Cx /coff .\questao9C.asm /link /SUBSYSTEM:console /out.questao9C.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib            
-            
+;Cálculo de um fatorial em Assembly MASM .repeat - .untilcxz           
             .686
             .model flat, c
             .stack 100h
@@ -30,7 +30,6 @@ if01:       cmp num, 0
             .untilcxz 
 endif01:    nop
             mov fatorial, eax
-            mov i, ecx
 
             INVOKE printf, ADDR msg1fmt, num, fatorial
             ret

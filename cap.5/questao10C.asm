@@ -1,5 +1,5 @@
 ;ml /Cx /coff .\questao10C.asm /link /SUBSYSTEM:console /out.questao10C.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib            
-            
+;Elemento x da sequencia de Fibonacci em Assembly MASM .repeat - .untilcxz            
             .686
             .model flat, c
             .stack 100h
@@ -36,6 +36,7 @@ else02:     nop
             mov eax, primeiro
             mov ebx, segundo
             mov edx, proximo
+            ; a quandidade de repetição de soma pra um elemndo da posição x é x-1 
             mov ecx, num
             dec ecx
             ;edx = proximo
