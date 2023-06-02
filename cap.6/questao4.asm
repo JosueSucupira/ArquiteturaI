@@ -26,7 +26,7 @@ main        proc
 while01:    cmp dsb, 1fh
             jg endw
             
-            if01:       test dsb, 00001b
+if01:       test dsb, 00001b
             jz else01
             INVOKE printf, ADDR msg1fmt, ADDR msgbit0
             jmp endif01
