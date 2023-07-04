@@ -11,6 +11,7 @@ printf      PROTO arg1:Ptr Byte, printlist:VARARG
 in1fmt      byte "%d", 0
 msg1fmt     byte "O termo na posicao %d da sequencia de Fibonacci eh: %d",0Ah, 0
 
+
 msg1        byte "Digite o numero da posicao da sequencia de Fibonacci que voce deseja calcular:  ",0
 
 num         sdword ?
